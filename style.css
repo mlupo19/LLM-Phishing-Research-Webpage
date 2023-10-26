@@ -1,5 +1,9 @@
 body {
-    background-color: #acbca4;
+    /* background-color: #acbca4; */
+    background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    
+}
+
+h1 {
+    font-size: 36px;
 }
