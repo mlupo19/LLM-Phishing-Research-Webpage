@@ -26,7 +26,12 @@
       'id': paramValue1
     });
 
-    gtag('config', 'G-41N3NGE7LJ');
+    // Configure Google Analytics with custom dimension
+    gtag('config', 'G-41N3NGE7LJ', {
+      'custom_map': {
+        'id': 'id' // Replace 'dimension1' with the appropriate dimension index
+      }
+    });
   </script>
 
   <body>
