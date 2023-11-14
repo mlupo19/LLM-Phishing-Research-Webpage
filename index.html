@@ -26,10 +26,17 @@
       'id': paramValue1
     });
 
-    // Configure Google Analytics with custom dimension
+    // Push custom values to the dataLayer
+    dataLayer.push({
+      'event': 'pageview',
+      'link_id': linkIdValue
+    });
+
+    // Configure Google Analytics with custom metric
     gtag('config', 'G-41N3NGE7LJ', {
       'custom_map': {
-        'id': 'id' // Replace 'dimension1' with the appropriate dimension index
+        'dimension1': 'id', // Replace 'dimension1' with the appropriate custom dimension index
+        'metric1': 'link_id' // Replace 'metric1' with the appropriate metric index
       }
     });
   </script>
