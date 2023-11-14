@@ -16,6 +16,16 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
+      // Get the URL parameter values
+    var urlParams = new URLSearchParams(window.location.search);
+    var paramValue1 = urlParams.get('id');
+
+    // Push custom values to the dataLayer
+    dataLayer.push({
+      'event': 'pageview',
+      'id': paramValue1
+    });
+
     gtag('config', 'G-41N3NGE7LJ');
   </script>
 
