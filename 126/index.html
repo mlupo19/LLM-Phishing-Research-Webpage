@@ -16,29 +16,8 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-      // Get the URL parameter values
-    var urlParams = new URLSearchParams(window.location.search);
-    var paramValue1 = urlParams.get('id');
-
-    // Push custom values to the dataLayer
-    dataLayer.push({
-      'event': 'pageview',
-      'id': paramValue1
-    });
-
-    // Push custom values to the dataLayer
-    dataLayer.push({
-      'event': 'pageview',
-      'link_id': paramValue1
-    });
-
-    // Configure Google Analytics with custom metric
-    gtag('config', 'G-41N3NGE7LJ', {
-      'custom_map': {
-        'dimension1': 'id', // Replace 'dimension1' with the appropriate custom dimension index
-        'metric1': 'link_id' // Replace 'metric1' with the appropriate metric index
-      }
-    });
+        // Configure Google Analytics with custom metric
+    gtag('config', 'G-41N3NGE7LJ');
   </script>
 
   <body>
@@ -62,6 +41,6 @@
         <p>This experiment was conducted by Thomas Armstrong, Michael Lupo, and Srikar Cheeti as part of CMSC473 at the University of Maryland.<br>
         For more information or to ask questions, reach out to <a href="mailto: mlupo@umd.edu">mlupo@umd.edu</a></p>
     </main>
-	<script src="index.js"></script>
+	
   </body>
 </html>
